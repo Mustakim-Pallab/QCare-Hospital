@@ -1,0 +1,27 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');   
+@import url('https://fonts.googleapis.com/css2?family=Cookie&display=swap');
+
+.CompanyName{
+
+    font-family: 'Cinzel', serif;
+    font-size: 2em;
+    color:rgb(105, 5, 5) !important;
+
+}
+
+.CompanyName span{
+
+    font-family: 'Cookie', cursive;
+}
+.Navigation_options{
+    color:black !important;
+}
+#sign_in_button{
+    color:white !important;
+    background-color:rgb(52, 179, 172);
+    border-radius: 15px;
+    border:0px !important;
+    margin-top: -5px ;
+    
+}
