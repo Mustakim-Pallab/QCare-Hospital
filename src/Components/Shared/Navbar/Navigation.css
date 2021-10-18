@@ -16,12 +16,33 @@
 }
 .Navigation_options{
     color:black !important;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    /* width: 90px; */
+    
+    
 }
+.Navigation_options:hover{
+    border-bottom: 3px solid rgb(6, 3, 56);
+    padding-bottom: 17px;
+    padding-top: 10px;
+    
+    
+}
+
 #sign_in_button{
     color:white !important;
-    background-color:rgb(52, 179, 172);
+    /* background-color:rgb(21, 196, 187); */
+    background-image: linear-gradient(to right, rgb(10, 2, 58) , rgb(7, 77, 99));
+    width: 100px;
+    height: 40px;
     border-radius: 15px;
     border:0px !important;
     margin-top: -5px ;
+    
+}
+#sign_in_button:hover{
+    
+    background-image: linear-gradient(to right, rgb(7, 77, 99), rgb(10, 2, 58));
     
 }

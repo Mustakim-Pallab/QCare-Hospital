@@ -7,7 +7,7 @@ import {  Button, Container, Nav, Navbar, NavDropdown } from 'react-bootstrap'
 const Navigation = () => {
     return (
         <div className="Navigation">
-            <Navbar collapseOnSelect expand="lg" /*bg="light" */ >
+            <Navbar collapseOnSelect expand="lg" sticky="top"  bg="light"  >
             <Container>
             <Navbar.Brand href="#home" className="CompanyName d-flex">
                 <img
@@ -29,14 +29,14 @@ const Navigation = () => {
                 <Nav className="me-auto">
                 
                 </Nav>
-                <Nav >
-                <Nav.Link className="Navigation_options" href="#deets">Home</Nav.Link>
+                <Nav className="gap-2">
+                <Nav.Link className="Navigation_options " href="#deets">Home</Nav.Link>
                 <Nav.Link className="Navigation_options" href="#deets">About Us</Nav.Link>
-                <Nav.Link className="Navigation_options" href="#deets">Our Services</Nav.Link>
+                <Nav.Link className="Navigation_options" href="#deets">Services</Nav.Link>
                 <Nav.Link className="Navigation_options" href="#deets">Speciality</Nav.Link>
-                <Nav.Link className="Navigation_options" href="#deets">Researchs</Nav.Link>
-                <Nav.Link  href="#memes">
-                    <Button id="sign_in_button" className="">
+                <Nav.Link className="Navigation_options" href="#deets">Researches</Nav.Link>
+                <Nav.Link  href="#memes" className="gap-5">
+                    <Button id="sign_in_button" >
                         Sign In
                     </Button>
                 </Nav.Link>
