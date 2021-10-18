@@ -18,8 +18,11 @@ const Banner = () => {
                 alt="First slide "
                 /> 
                 <Carousel.Caption className="carousel_caption">
-                <h3>First slide label</h3>
-                <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+                
+                <h1>Specialist Doctors along with Professional staffs </h1>
+                <p className="p-5 mx-5 w-75 text-justify">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, odit, praesentium eos in dolore ut, sit aspernatur nulla deleniti dolorem repellat quasi! Commodi illum animi ea sint, debitis, recusandae, molestiae delectus totam vel repellat est error minima aliquid maxime culpa. Facere, vel obcaecati! Et excepturi nobis corrupti eveniet, reiciendis aperiam quos, asperiores illo, incidunt architecto ipsam quaerat. Laudantium nesciunt eaque, aliquid enim odio reprehenderit blanditiis voluptate molestiae quaerat repudiandae dicta perferendis facere, eveniet ullam similique expedita doloribus, amet rem dignissimos obcaecati ipsa aspernatur voluptas. Eveniet quam cum aspernatur veritatis corporis deserunt placeat quidem quasi voluptatum itaque molestias fugiat consequuntur, temporibus quibusdam recusandae sapiente in eum facilis laboriosam reiciendis aperiam fuga corrupti totam! Deleniti eveniet dignissimos, iste vel ducimus natus voluptatibus voluptas nulla placeat ratione provident minima, repellendus accusantium ex nostrum fuga accusamus facere ad veritatis voluptate. Inventore cum nam minus asperiores, facilis error doloribus, deserunt et corrupti possimus aliquam excepturi.
+                </p>
                 </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -30,7 +33,7 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption className="carousel_caption">
-                <h3>Second slide label</h3>
+                <h1>Second slide label</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
                 </Carousel.Caption>
             </Carousel.Item>
@@ -42,7 +45,7 @@ const Banner = () => {
                 />
 
                 <Carousel.Caption className="carousel_caption">
-                <h3>Third slide label</h3>
+                <h1>Third slide label</h1>
                 <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
                 </Carousel.Caption>
             </Carousel.Item>

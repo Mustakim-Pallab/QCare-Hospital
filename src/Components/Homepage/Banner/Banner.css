@@ -1,10 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@00&display=swap');
+
 *{
 
-    overflow-x: hidden;
-    overflow-y: hidden;
+    /* overflow-x: hidden; */
+    /* overflow-y: hidden; */
 }
 .carousel_caption{
-    background-color:rgba(0, 0, 0, 0.521);
+    /* background-color:rgba(0, 0, 0, 0.521); */
     width: 100%;
     height: 100%;
     margin: 0;
@@ -13,8 +15,28 @@
     margin-left: -15%;
     margin-bottom: -1.5%;
 }
+.carousel_caption h1{
+
+    font-family: 'EB Garamond', serif;
+    /* margin-top: 15%; */
+    /* margin-left: -50%; */
+    padding-left :3%;
+    padding-right :30%;
+    padding-top: 15%;
+}
+.carousel_caption h3{
+
+    font-family: 'EB Garamond', serif;
+    /* margin-top: 15%; */
+    /* margin-left: -50%; */
+    padding-left :3%;
+    padding-right :30%;
+    padding-top: 15%;
+    padding-bottom:0 ;
+}
 .carousel_caption p{
-    width:100%;
+    
+    text-align: justify;
     
 }
 
