@@ -3,43 +3,75 @@ import './Navigation.css';
 import logo from '../../../Images/logo1.PNG'
 import '../../../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import {  Button, Container, Nav, Navbar } from 'react-bootstrap'
+import { NavLink } from 'react-router-dom'
+import UseAuth from '../../Hooks/UseAuth';
+import { signOut } from '@firebase/auth';
 
 const Navigation = () => {
+    
+    const{User, setUser,auth}=UseAuth()
+    console.log(User.email);
+    const logOut=()=>{
+        signOut(auth).then(() => {
+            setUser({})
+          }).catch((error) => {
+            // An error happened.
+          });
+    }
     return (
         <div className="Navigation">
-            <Navbar collapseOnSelect expand="lg" sticky="top"  bg="light"  >
+            <Navbar collapseOnSelect expand="lg" sticky="top"  bg="light" className="navbar d-flex align-items-center" >
             <Container>
-            <Navbar.Brand href="#home" className="CompanyName d-flex">
+            <Navbar.Brand href="#home" className="CompanyName d-flex mt-3 ">
                 <img
                     src={logo}
-                    width="70"
-                    height="70"
+                    width="50"
+                    height="50"
                     className="d-inline-block align-top"
                     alt="QCare logo"
                 />
-                <p className="mt-3 ms-1">QCare {" "}
+                <p className="mt-1 ms-1">QCare {" "}
                 <span>
                     Hospital
                 </span></p>
             </Navbar.Brand>
-            {/* <Navbar.Brand href="#home"  >
+            {/* <Navbar.Brand to="#home"  >
                 </Navbar.Brand> */}
-            <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+            <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
             <Navbar.Collapse id="responsive-navbar-nav">
                 <Nav className="me-auto">
                 
                 </Nav>
-                <Nav className="gap-2">
-                <Nav.Link className="Navigation_options " href="#deets">Home</Nav.Link>
-                <Nav.Link className="Navigation_options" href="#deets">About Us</Nav.Link>
-                <Nav.Link className="Navigation_options" href="#deets">Services</Nav.Link>
-                <Nav.Link className="Navigation_options" href="#deets">Speciality</Nav.Link>
-                <Nav.Link className="Navigation_options" href="#deets">Researches</Nav.Link>
-                <Nav.Link  href="#memes" className="gap-5">
-                    <Button id="sign_in_button" >
-                        Sign In
+                <Nav className="gap-2 mt-2 mt-xs-0 bg-light">
+                <Nav.Link className="Navigation_options" href='/home'>Home</Nav.Link>
+                <Nav.Link className="Navigation_options" href="/about_us">About Us</Nav.Link>
+                <Nav.Link className="Navigation_options" href="/services">Services</Nav.Link>
+                <Nav.Link className="Navigation_options" href="/speciality">Specialities</Nav.Link>
+        
+                <Nav.Link className="Name">
+                    <i>
+                    {User?.displayName}
+                    </i>
+                    </Nav.Link>
+                
+                {
+                    User.email?(
+                    <Nav.Link onClick={logOut} className="gap-5 ">
+                    <Button id="sign_in_button" size="sm" >
+                       <b>
+                       Logout
+                        </b>
                     </Button>
-                </Nav.Link>
+                </Nav.Link>)
+                :(
+                <Nav.Link href="/login" className="gap-5 ">
+                    <Button id="sign_in_button" size="sm" >
+                       <b>
+                       Login
+                        </b>
+                    </Button>
+                </Nav.Link>)
+                }
                 
                 </Nav>
             </Navbar.Collapse>
@@ -49,4 +81,4 @@ const Navigation = () => {
     );
 };
 
-export default Navigation;
+export default Navigation; 

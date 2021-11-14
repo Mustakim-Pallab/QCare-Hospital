@@ -1,0 +1,93 @@
+[
+    {
+      "name": "Dedicated ICU",
+      "image": "https://chattogram.evercarebd.com/wp-content/uploads/2021/05/cardiology.jpg",
+      "details": "We have dedicated ICUs with all the modern facilities along with central oxygen supply. Our ICUs operated by professional persons who are well trained ",
+      "person": "Dr. Abdur Razzaq",
+      "post": "ICU Incharge",
+      "phone":"+1 (968) 417-3215",
+      "visiting": "10am-12am"
+
+    },
+    {
+      "name": "24 Hours Emergency Service ",
+      "image": "http://kgh.gov.bd/wp-content/uploads/photo-gallery/1.JPG",
+      "details": "Our Emergency ward is opened 24 hours and seven days a week. We are always ready to serve you. Feel free to contact in case of imergency ",
+      "person": "Dr. Manik Mostafa",
+      "post": "Emergency Medical Officer",
+      "phone":"+1 (968) 417-9125",
+      "visiting": "10am-10pm"
+
+    },
+    {
+      "name": "Specialists and Professional Staffs",
+      "image": "https://www.evercarebd.com/wp-content/uploads/2015/05/internal_medicine.jpg",
+      "details": "We have a group of dedicated people who are not only professional and well trained but also specialists in their department. Find the best of Bests ",
+      "person": "Dr. Rebeka sultana",
+      "phone": "+1 (968) 417-2615",
+      "post": "Residential Medical Officer",
+      "visiting": "10am-12pm"
+
+    },
+    {
+      "name": "Fertility Center",
+      "image": "https://www.evercarebd.com/wp-content/uploads/2015/04/f_c_1.jpg",
+      "details": "Our ferlity center is a milestone of infirtility treatment5 in Bnagladesh. thousands of patients got treatment and became parents that makes us proud.  ",
+      "person": "Dr. Khan Md Rasel",
+      "phone": "+1 (968) 417-2615",
+      "post": "Medical Officer",
+      "visiting": "10am-8pm"
+
+    },
+    {
+      "name": "Dental Unit",
+      "image": "https://www.evercarebd.com/wp-content/uploads/2015/05/Dental_Maxillofacial_Surgery-150x150.jpg",
+      "details": "We care every organ of ypur body. Our Dental unit consists of some dedicated oral and maxiofacial surgeons who cares every smile.  ",
+      "person": "Dr. mahmuda Sultana",
+      "phone": "+1 (968) 417-2615",
+      "post": "Medical Officer(Unit Incharge)",
+      "visiting": "10am-12am"
+
+    },
+    {
+      "name": "Research Center",
+      "image": "https://www.evercarebd.com/wp-content/uploads/2015/05/Lab_Medicine.jpg",
+      "details": "we research, we invent, we change is the motto of our research center. In recent years our innovation in medical sector was enermous. This center our pride ",
+      "person": "Dr. Abdul Hakim Polash",
+      "phone": "+1 (968) 417-2615",
+      "post": "Chief Scientific Officer",
+      "visiting": "Restricted"
+
+    },
+    {
+      "name": "Dermatology Unit",
+      "image": "https://www.evercarebd.com/wp-content/uploads/2018/11/Dermatology-and-Venereology-300x200.jpg",
+      "details": "Our dermatology unit is one of the notorious dermatology centers of Bangladesh. Here we perform plastic surgery, cosmetic surgery, burn care, skin problems and so on ",
+      "person": "Dr. Fahmida Nabi",
+      "phone": "+1 (968) 417-2615",
+      "post": "Assistant Professor(Unit Incharge)",
+      "visiting": "10am-12pm"
+
+    },
+    {
+      "name": "Modern Operatin Theater",
+      "image": "https://www.evercarebd.com/wp-content/uploads/2015/05/Neurosurgery.jpg",
+      "details": "Our well equiped operation theater has world class facilities and  equipments .We have central oxygen supply, high flow nasal canulla and central generators.  ",
+      "person": "Dr. Golam Kibria Chowdhury",
+      "phone": "+1 (968) 417-2615",
+      "post": "OT Supervisor",
+      "visiting": "Restricted"
+
+    },
+    {
+      "name": "Modern Pathology",
+      "image": "https://www.evercarebd.com/wp-content/uploads/2015/05/Diagnostic_Interventional_Radiology.jpg",
+      "details": "We have modern facilities in our pathology. We ensure all the reports to be 100% correct. We know, life of a patient sometimes depends upon pathological report  ",
+      "person": "Dr. Abdus Sobhan",
+      "phone": "+1 (968) 417-2615",
+      "post": "Proffessor(Pathology Incharge)",
+      "visiting": "5am-8pm"
+
+    }
+    
+  ]
