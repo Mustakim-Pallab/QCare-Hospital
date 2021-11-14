@@ -24,7 +24,7 @@ const Specialities = () => {
                 <img src={pic1} class="img p-3 mt-4 rounded-start" alt="..."/>
                 </div>
                 <div class="col-md-8">
-                <div class="Card-body mt-5 p-3 ps-2 p-sm-1">
+                <div class="Card-body mt-xl-5 mt-lg-5 mt-md-5 mt-md-5 my-sm-2 pt-sm-0 mx-xs-3 my-xs-2 pt-xs-0 mx-xs-3 p-xl-3 p-lg-3 p-md-3 ps-xl-2 p-lg-2 p-md-2 p-sm-0 p-xs-0">
                     <h2 class="Card-title"><i>
                     Emergency Abmulance Service</i></h2>
                     <p class="Card-text">We provide 24/7 emergency abmulace service. Just pick your phone and call us on 12345</p>
@@ -39,7 +39,7 @@ const Specialities = () => {
                 <img src={pic2} class="img p-3 mt-4 rounded-start" alt="..."/>
                 </div>
                 <div class="col-md-8">
-                <div class="Card-body mt-5 p-3 ps-2 p-sm-1">
+                <div class="Card-body mt-xl-5 mt-lg-5 mt-md-5 mt-md-5 my-sm-2 pt-sm-0 mx-xs-3 my-xs-2 pt-xs-0 mx-xs-3 p-xl-3 p-lg-3 p-md-3 ps-xl-2 p-lg-2 p-md-2 p-sm-0 p-xs-0">
                     <h2 class="Card-title"><i>
                    Healty Meals for admitted patients</i></h2>
                     <p class="Card-text">Fresh and healty food as per doctors advice is provided 3 times a day.</p>
@@ -54,7 +54,7 @@ const Specialities = () => {
                 <img src={pic3} class="img p-3 mt-4 rounded-start" alt="..."/>
                 </div>
                 <div class="col-md-8">
-                <div class="Card-body mt-5 p-3 ps-2 p-sm-1">
+                <div class="Card-body mt-xl-5 mt-lg-5 mt-md-5 mt-md-5 my-sm-2 pt-sm-0 mx-xs-3 my-xs-2 pt-xs-0 mx-xs-3 p-xl-3 p-lg-3 p-md-3 ps-xl-2 p-lg-2 p-md-2 p-sm-0 p-xs-0">
                     <h2 class="Card-title"><i>
                     Modern Pathology Service</i></h2>
                     <p class="Card-text">A modern pathology for diagnosis is available that gives 100% assurance of correct report</p>
@@ -69,7 +69,7 @@ const Specialities = () => {
                 <img src={pic4} class="img p-3 mt-4 rounded-start" alt="..."/>
                 </div>
                 <div class="col-md-8">
-                <div class="Card-body mt-5 p-3 ps-2 p-sm-1">
+                <div class="Card-body mt-xl-5 mt-lg-5 mt-md-5 mt-md-5 my-sm-2 pt-sm-0 mx-xs-3 my-xs-2 pt-xs-0 mx-xs-3 p-xl-3 p-lg-3 p-md-3 ps-xl-2 p-lg-2 p-md-2 p-sm-0 p-xs-0">
                     <h2 class="Card-title"><i>
                     Cardiac Care</i></h2>
                     <p class="Card-text">Cardiologists from home and abroad visits every moth along with our regular physicians</p>
@@ -84,7 +84,7 @@ const Specialities = () => {
                 <img src={pic5} class="img p-3 mt-4 rounded-start" alt="..."/>
                 </div>
                 <div class="col-md-8">
-                <div class="Card-body mt-5 p-3 ps-2 p-sm-1">
+                <div class="Card-body mt-xl-5 mt-lg-5 mt-md-5 mt-md-5 my-sm-2 pt-sm-0 mx-xs-3 my-xs-2 pt-xs-0 mx-xs-3 p-xl-3 p-lg-3 p-md-3 ps-xl-2 p-lg-2 p-md-2 p-sm-0 p-xs-0">
                     <h2 class="Card-title"><i>
                     Pharmacy</i></h2>
                     <p class="Card-text">Our vast pharmacy is a store of all kinds of medicines and medical accessories that are provided with the govt approved rate </p>
@@ -99,7 +99,7 @@ const Specialities = () => {
                 <img src={pic6} class="img p-3 mt-4 rounded-start" alt="..."/>
                 </div>
                 <div class="col-md-8">
-                <div class="Card-body mt-5 p-3 ps-2 p-sm-1">
+                <div class="Card-body mt-xl-5 mt-lg-5 mt-md-5 mt-md-5 my-sm-2 pt-sm-0 mx-xs-3 my-xs-2 pt-xs-0 mx-xs-3 p-xl-3 p-lg-3 p-md-3 ps-xl-2 p-lg-2 p-md-2 p-sm-0 p-xs-0">
                     <h2 class="Card-title"><i>
                     Specialized Doctors</i></h2>
                     <p class="Card-text">Our Doctors are proffessional, experienced and well trained.  </p>
