@@ -10,15 +10,16 @@
 
     },
     {
-      "name": "24 Hours Emergency Service ",
-      "image": "http://kgh.gov.bd/wp-content/uploads/photo-gallery/1.JPG",
-      "details": "Our Emergency ward is opened 24 hours and seven days a week. We are always ready to serve you. Feel free to contact in case of imergency ",
-      "person": "Dr. Manik Mostafa",
-      "post": "Emergency Medical Officer",
-      "phone":"+1 (968) 417-9125",
+      "name": "Joint Care & Wellness Centre",
+      "image": "https://www.evercarebd.com/wp-content/uploads/2015/04/joint-care-and-wellness-centre.jpg",
+      "details": "QCare Joint Care & Wellness Centre is the first & only super specialty Joint Care & Wellness Centre in Bangladesh, dealing with all knee related problems. ",
+      "person": "Dr. M Ali",
+      "post": "Unit Incharge ",
+      "phone":"+1 (968) 417-5640",
       "visiting": "10am-10pm"
 
     },
+    
     {
       "name": "Specialists and Professional Staffs",
       "image": "https://www.evercarebd.com/wp-content/uploads/2015/05/internal_medicine.jpg",
@@ -70,7 +71,7 @@
 
     },
     {
-      "name": "Modern Operatin Theater",
+      "name": "Modern Operation Theater",
       "image": "https://www.evercarebd.com/wp-content/uploads/2015/05/Neurosurgery.jpg",
       "details": "Our well equiped operation theater has world class facilities and  equipments .We have central oxygen supply, high flow nasal canulla and central generators.  ",
       "person": "Dr. Golam Kibria Chowdhury",
@@ -79,6 +80,7 @@
       "visiting": "Restricted"
 
     },
+
     {
       "name": "Modern Pathology",
       "image": "https://www.evercarebd.com/wp-content/uploads/2015/05/Diagnostic_Interventional_Radiology.jpg",
@@ -89,5 +91,6 @@
       "visiting": "5am-8pm"
 
     }
+    
     
   ]

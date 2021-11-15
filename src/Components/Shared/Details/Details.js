@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router';
 import './Detail.css'
+import UseAuth from '../../Hooks/UseAuth'
 
 const Details = () => {
 
+    const{isLoading}=UseAuth()
     const{name}=useParams();
     const [Services, setServices] = useState([]);
     const [ServiceDetail, setServiceDetail] = useState({});
@@ -14,12 +16,15 @@ const Details = () => {
         .then(data=>setServices(data));
     },[]) 
 
-    useEffect(() => {
-        if(Services.length>0){
-            const DataFound= Services.find(x=>x.name===name)
-            setServiceDetail(DataFound)
-        }
-    }, [Services])
+
+    
+        useEffect(() => {
+            console.log(Services.length);
+            if(Services.length>0 && !isLoading){
+                const DataFound= Services.find(x=>x.name===name)
+                setServiceDetail(DataFound)
+            }
+        }, [Services])
 
 
     return (

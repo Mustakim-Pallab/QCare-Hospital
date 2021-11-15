@@ -12,7 +12,7 @@ import UseAuth from '../../Hooks/UseAuth';
 
 const NewAccount = () => {
 
-    const{User,setUser, SignInWithGoogle, CreateAccountWithEmailAndPassword }=UseAuth()
+    const{setUser, setIsLoading, SignInWithGoogle, CreateAccountWithEmailAndPassword }=UseAuth()
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -20,6 +20,7 @@ const NewAccount = () => {
     const location=useLocation();
 
     const url= location.state?.from|| "/home"
+
     const getEmail=(e)=>{
         setEmail(e.target.value);
     }
@@ -27,6 +28,7 @@ const NewAccount = () => {
     const getPassword=(e)=>{
         setPassword(e.target.value);
     }
+
     const EmailAndPasswordSignUp=(e)=>{
 
         e.preventDefault();
@@ -34,6 +36,7 @@ const NewAccount = () => {
         CreateAccountWithEmailAndPassword(email,password)
         .then((userCredential) => {
             // Signed in 
+            setIsLoading(true)
             const user = userCredential.user;
             // ...
             setUser(user);
@@ -44,7 +47,10 @@ const NewAccount = () => {
             const errorCode = error.code;
             const errorMessage = error.message;
             // ..
-        });
+        })
+        .finally(()=> {
+            setIsLoading(false)
+          });
         
     }
 
@@ -56,7 +62,7 @@ const NewAccount = () => {
             
             const credential = GoogleAuthProvider.credentialFromResult(result);
             const token = credential.accessToken;
-            
+            setIsLoading(true)
             setUser(result.user);
             history.push(url)
             
@@ -69,7 +75,10 @@ const NewAccount = () => {
             
             const credential = GoogleAuthProvider.credentialFromError(error);
             
-        });
+        })
+        .finally(()=> {
+            setIsLoading(false)
+          });
     }
     
     return (

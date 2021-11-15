@@ -6,6 +6,7 @@ import {  Button, Container, Nav, Navbar } from 'react-bootstrap'
 import { NavLink } from 'react-router-dom'
 import UseAuth from '../../Hooks/UseAuth';
 import { signOut } from '@firebase/auth';
+import { HashLink } from 'react-router-hash-link';
 
 const Navigation = () => {
     
@@ -43,10 +44,10 @@ const Navigation = () => {
                 
                 </Nav>
                 <Nav className="gap-2 mt-2 mt-xs-0 bg-light">
-                <Nav.Link className="Navigation_options" href='/home'>Home</Nav.Link>
-                <Nav.Link className="Navigation_options" href="/about_us">About Us</Nav.Link>
-                <Nav.Link className="Navigation_options" href="/services">Services</Nav.Link>
-                <Nav.Link className="Navigation_options" href="/speciality">Specialities</Nav.Link>
+                <Nav.Link as={HashLink} className="Navigation_options" to='/home#home'>Home</Nav.Link>
+                <Nav.Link as={HashLink} className="Navigation_options" to="/about_us">About Us</Nav.Link>
+                <Nav.Link as={HashLink} className="Navigation_options" to="/services">Services</Nav.Link>
+                <Nav.Link as={HashLink} className="Navigation_options" to="/speciality">Specialities</Nav.Link>
         
                 <Nav.Link className="Name">
                     <i>
@@ -64,7 +65,7 @@ const Navigation = () => {
                     </Button>
                 </Nav.Link>)
                 :(
-                <Nav.Link href="/login" className="gap-5 ">
+                <Nav.Link as={HashLink} to="/login" className="gap-5 ">
                     <Button id="sign_in_button" size="sm" >
                        <b>
                        Login

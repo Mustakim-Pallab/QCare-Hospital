@@ -12,7 +12,7 @@ initializeFirebase()
 
 const Login = () => {
 
-    const{ User,setUser, EmailAndPasswordSignIn,SignInWithGoogle }=UseAuth()
+    const{ User,setUser, setIsLoading, EmailAndPasswordSignIn,SignInWithGoogle }=UseAuth()
     const history=useHistory()
     const location= useLocation()
 
@@ -37,14 +37,17 @@ const Login = () => {
         .then((userCredential) => {
             // Signed in 
             // ...
+            setIsLoading(true) 
             setUser(userCredential.user);
             history.push(url);
         })
         .catch((error) => {
             const errorCode = error.code;
             const errorMessage = error.message;
-        });
-        
+        })
+        .finally(() => {
+            setIsLoading(false)
+          });
         
     }
 
@@ -57,7 +60,7 @@ const Login = () => {
             
             const credential = GoogleAuthProvider.credentialFromResult(result);
             const token = credential.accessToken;
-            
+            setIsLoading(true)
             setUser(result.user);
             history.push(url)
             
@@ -70,9 +73,22 @@ const Login = () => {
             
             const credential = GoogleAuthProvider.credentialFromError(error);
             
-        });
+        })
+        .finally(() => {
+            setIsLoading(false)
+          });
     }
-    
+    if(User.email){
+        return(
+            <div>
+                
+                <h1 className="m-5">
+                    Yoy are Already Logged in <br/>
+                    Logout first to Login Another Account
+                </h1>
+            </div>
+        )
+    }
     
     return ( 
         <div>
